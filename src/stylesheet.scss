@@ -1,0 +1,355 @@
+
+
+body.open
+{
+    
+    header
+    {
+        .menu_icon
+        {
+            .mat-button-wrapper
+            {
+                span
+                {
+                    background: $dark_theme;
+                    $time-offset-close: 1;
+                }
+            }
+        }
+        
+        .menu-icon-toggle
+        {
+            span 
+            {
+                opacity: 0;
+            }
+            
+            &::before,
+            &::after 
+            {
+                background-color: $dark_theme;
+            }
+            
+            &::before
+            {
+                top: calc(50% - 1px);
+                transform: rotate(45deg);
+            }
+            
+            &::after 
+            {
+                bottom: calc(50% - 1px);
+                transform: rotate(-45deg);
+            }
+            
+            &::before,
+            &::after
+            {
+                $time-offset-close: 1;
+            }
+        }
+    }
+    
+    .nav_container
+    {
+        visibility: visible;
+        
+        .menu-background
+        {
+            visibility: visible;
+            transition: background-position 0.5s, transform 0.5s 0.5s;
+            
+            &.top
+            {
+                transform: rotate(-45deg) translateY(-49%);
+                background-position: 0 0;
+            }
+            
+            &.middle
+            {
+                transform: rotate(-45deg) translateY(50%) scaleY(1);
+            }
+            
+            &.bottom 
+            {
+                transform: rotate(-45deg) translateY(149%);
+                background-position: 0 0;
+            }
+        }
+        
+        .wrapper
+        {
+            .social_icon
+            {
+                button
+                {
+                    opacity: 1;
+                    transform: translateX(0);
+                    backface-visibility: hidden;
+                    $time-offset-open: 1;
+                    
+                    @for $i from 1 through 5 
+                    {
+                        
+                        &:nth-child(#{$i}) 
+                        {
+                            $time-offset-open: $time-offset-open + 0.1;
+                            transition-delay: #{$time-offset-open}s;
+                        }
+                    }
+                }
+            }
+            
+            .min_wrapper
+            {
+                .navigation
+                {
+                    ul
+                    {
+                        li
+                        {
+                            opacity: 1;
+                            transform: translateX(0);
+                            backface-visibility: hidden;
+                            $time-offset-open: 1;
+                            
+                            @for $i from 1 through 5 
+                            {
+                                
+                                &:nth-child(#{$i}) 
+                                {
+                                    $time-offset-open: $time-offset-open + 0.1;
+                                    transition-delay: #{$time-offset-open}s;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .contact_info
+                {
+                    .info
+                    {
+                        a
+                        {
+                            opacity: 1;
+                            transform: translateX(0);
+                            backface-visibility: hidden;
+                            $time-offset-open: 1;
+                            
+                            @for $i from 1 through 5 
+                            {
+                                &:nth-child(#{$i}) 
+                                {
+                                    $time-offset-open: $time-offset-open + 0.1;
+                                    transition-delay: #{$time-offset-open}s;
+                                    
+                                    span 
+                                    {
+                                        transition-delay: #{$time-offset-open}s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    .download_cv
+                    {
+                        opacity: 1;
+                        transform: scale(1);
+                        
+                        backface-visibility: hidden;
+                        $time-offset-open: 1;
+                        
+                        @for $i from 1 through 5 
+                        {
+                            &:nth-child(#{$i}) 
+                            {
+                                $time-offset-open: $time-offset-open + 0.1;
+                                transition-delay: #{$time-offset-open}s;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &:after
+            {
+                height: calc(100% - 60px);
+                opacity: 1;
+                $time-offset-close: 1;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    
+    
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) 
+{
+    
+    body, html{background: $light_theme;}
+    
+    
+    
+    
+    header
+    {
+        
+        .menu-icon-toggle 
+        {            
+            span, &::before, &::after 
+            {
+                background-color: $dark_theme;
+            }
+        }
+    }
+    
+    
+    .home_h1{color: $dark_theme;}
+    
+    
+    
+    
+    
+    .home_container
+    {
+        .home_wrapper
+        {
+            
+            .mk_profile
+            {
+                
+                .profile_shadow{background:  rgba(0, 0, 0, 0.1);}
+            }
+            
+            
+            
+            .mk_info
+            {
+                .cs-left
+                {
+                    a
+                    {
+                        color: $dark_theme;
+                    }
+                }
+            }
+            
+            .followup
+            {
+                
+                .tt
+                {
+                    p{color: $dark_theme;}
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    .nav_container
+    {
+        .menu-background 
+        {
+            background-color: $light_theme;
+            
+            &.top{background: linear-gradient(to top, $dark_theme 50%, $dark_theme 50%);}
+            
+            &.middle{background: $dark_theme;}
+            
+            &.bottom{background: linear-gradient(to bottom, $dark_theme 50%, $dark_theme 50%);}
+        }
+        
+        .wrapper
+        {
+            .min_wrapper
+            {
+                .navigation
+                {
+                    ul
+                    {
+                        li
+                        {
+                            a
+                            {
+                                color: $light_theme;
+                            }
+                        }
+                    }
+                }
+                
+                .contact_info
+                {
+                    .info
+                    {
+                        a
+                        {
+                            color: $light_theme;
+                            
+                            svg
+                            {
+                                path
+                                {
+                                    fill: $light_theme;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &:after
+            {
+                background: url('assets/dot-dot_bg_dark.svg') center repeat-y;
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    body.open
+    {
+        
+        header
+        {
+            .menu_icon
+            {
+                .mat-button-wrapper
+                {
+                    span
+                    {
+                        background: $light_theme;
+                    }
+                }
+            }
+            
+            .menu-icon-toggle
+            {                
+                &::before,
+                &::after 
+                {
+                    background-color: $light_theme;
+                }
+            }
+        }
+        
+    }    
+}

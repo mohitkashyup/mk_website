@@ -1,0 +1,96 @@
+<div class="inner_container">
+    <div class="wrapper">
+        <div class="mk_poster" data-aos="zoom-out-up" data-aos-duration="2000"><img src="assets/aboutme.jpg" alt=""></div>
+        <div class="mk_content_wrapper">
+            <div class="mk_header" data-aos="fade-right">
+                <h1>Portfolio <span data-aos="zoom-in">Work</span></h1>
+            </div>
+            
+            <div class="wk_wrapper">
+                <div class="mk_tabs">
+                    <button mat-button (click)="tabActive('all')" [ngClass]="{'active' : tabActiveType['all'] == true}">All</button>
+                    <button mat-button (click)="tabActive('mApps')" [ngClass]="{'active' : tabActiveType['mApps'] == true}">Mobile Apps</button>
+                    <button mat-button (click)="tabActive('crm')" [ngClass]="{'active' : tabActiveType['crm'] == true}">Crm / Software</button>
+                    <button mat-button (click)="tabActive('wApps')" [ngClass]="{'active' : tabActiveType['wApps'] == true}">Website</button>
+                </div>
+                
+                <div class="mk_portfolio_wr">
+                    <ng-container *ngIf="tabActiveType['all']">
+                        <figure>
+                            <!-- thumbnail image wrapped in a link -->
+                            <a href="portfolio#img1" class="small_thumb">
+                                <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                            </a>
+                            
+                            <!-- lightbox container hidden with CSS -->
+                            <a href="portfolio#_" class="big_thumb" id="img1">
+                                <div class="zoom_container"><img src="https://cdn.business2community.com/wp-content/uploads/2019/10/UI-vs-UX-design.jpg"></div>
+                            </a>
+                        </figure>
+                        
+                        <figure>
+                            <!-- thumbnail image wrapped in a link -->
+                            <a href="portfolio#img1" class="small_thumb">
+                                <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                            </a>
+                            
+                            <!-- lightbox container hidden with CSS -->
+                            <a href="portfolio#_" class="big_thumb" id="img1">
+                                <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                            </a>
+                        </figure>
+                        
+                        <figure>
+                            <!-- thumbnail image wrapped in a link -->
+                            <a href="portfolio#img1" class="small_thumb">
+                                <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                            </a>
+                            
+                            <!-- lightbox container hidden with CSS -->
+                            <a href="portfolio#_" class="big_thumb" id="img1">
+                                <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                            </a>
+                        </figure>
+                    </ng-container>
+                    
+                    <figure *ngIf="tabActiveType['mApps']">
+                        <!-- thumbnail image wrapped in a link -->
+                        <a href="portfolio#img1" class="small_thumb">
+                            <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                        </a>
+                        
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="portfolio#_" class="big_thumb" id="img1">
+                            <div class="zoom_container"><img src="https://cdn.business2community.com/wp-content/uploads/2019/10/UI-vs-UX-design.jpg"></div>
+                        </a>
+                    </figure>
+                    
+                    <figure *ngIf="tabActiveType['mApps']">
+                        <!-- thumbnail image wrapped in a link -->
+                        <a href="portfolio#img1" class="small_thumb">
+                            <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                        </a>
+                        
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="portfolio#_" class="big_thumb" id="img1">
+                            <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                        </a>
+                    </figure>
+                    
+                    <figure *ngIf="tabActiveType['crm']">
+                        <!-- thumbnail image wrapped in a link -->
+                        <a href="portfolio#img1" class="small_thumb">
+                            <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                        </a>
+                        
+                        <!-- lightbox container hidden with CSS -->
+                        <a href="portfolio#_" class="big_thumb" id="img1">
+                            <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

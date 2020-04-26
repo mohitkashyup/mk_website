@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="9" viewBox="0 0 23 9">
+  <g id="dot-dot_bg" transform="translate(-64 -30)">
+    <g id="dot-dot_bg-2" data-name="dot-dot_bg">
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="5" height="5" rx="2.5" transform="translate(64 30)" fill="rgba(0,0,0,0.1)"/>
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="5" height="5" rx="2.5" transform="translate(73 30)" fill="rgba(0,0,0,0.1)"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="5" height="5" rx="2.5" transform="translate(82 30)" fill="rgba(0,0,0,0.1)"/>
+    </g>
+    <rect id="Rectangle_4320" data-name="Rectangle 4320" width="23" height="4" transform="translate(64 35)" fill="rgba(0,0,0,0)"/>
+  </g>
+</svg>
