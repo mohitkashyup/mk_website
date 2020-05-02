@@ -1,6 +1,6 @@
 <div class="inner_container">
     <div class="wrapper">
-        <div class="mk_poster" data-aos="zoom-out-up" data-aos-duration="2000"><img src="assets/aboutme.jpg" alt=""></div>
+        <div class="mk_poster xl_show" data-aos="zoom-out-up" data-aos-duration="2000"><img src="assets/aboutme.jpg" alt=""></div>
         <div class="mk_content_wrapper">
             <div class="mk_header" data-aos="fade-right">
                 <h1>Portfolio <span data-aos="zoom-in">Work</span></h1>
@@ -17,77 +17,143 @@
                 <div class="mk_portfolio_wr">
                     <ng-container *ngIf="tabActiveType['all']">
                         <figure>
-                            <!-- thumbnail image wrapped in a link -->
                             <a href="portfolio#img1" class="small_thumb">
-                                <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                                <img src="assets/portfolio/AbacusDesk_Sales_appUI_small.png">
                             </a>
                             
-                            <!-- lightbox container hidden with CSS -->
                             <a href="portfolio#_" class="big_thumb" id="img1">
-                                <div class="zoom_container"><img src="https://cdn.business2community.com/wp-content/uploads/2019/10/UI-vs-UX-design.jpg"></div>
+                                <div class="zoom_container">
+                                    <button class="cancel"><i class="material-icons">close</i></button>
+                                    <img src="assets/portfolio/AbacusDesk_Sales_appUI_big.png">
+                                </div>
                             </a>
                         </figure>
                         
                         <figure>
-                            <!-- thumbnail image wrapped in a link -->
-                            <a href="portfolio#img1" class="small_thumb">
-                                <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                            <a href="portfolio#img2" class="small_thumb">
+                                <img src="assets/portfolio/AsianHospital_crmUI_small.png">
                             </a>
                             
-                            <!-- lightbox container hidden with CSS -->
-                            <a href="portfolio#_" class="big_thumb" id="img1">
-                                <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                            <a href="portfolio#_" class="big_thumb" id="img2">
+                                <div class="zoom_container">
+                                    <button class="cancel"><i class="material-icons">close</i></button>
+                                    <img src="assets/portfolio/AsianHospital_crmUI_big.png">
+                                </div>
                             </a>
                         </figure>
                         
                         <figure>
-                            <!-- thumbnail image wrapped in a link -->
-                            <a href="portfolio#img1" class="small_thumb">
-                                <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                            <a href="portfolio#img3" class="small_thumb">
+                                <img src="assets/portfolio/equilibrium_appUI_dark_small.png">
                             </a>
                             
-                            <!-- lightbox container hidden with CSS -->
-                            <a href="portfolio#_" class="big_thumb" id="img1">
-                                <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                            <a href="portfolio#_" class="big_thumb" id="img3">
+                                <div class="zoom_container">
+                                    <button class="cancel"><i class="material-icons">close</i></button>
+                                    <img src="assets/portfolio/equilibrium_appUI_dark_big.png">
+                                </div>
                             </a>
                         </figure>
+                        
+                        <figure>
+                            <a href="portfolio#img4" class="small_thumb">
+                                <img src="assets/portfolio/Planify_webUI_small.png">
+                            </a>
+                            
+                            <a href="portfolio#_" class="big_thumb" id="img4">
+                                <div class="zoom_container">
+                                    <button class="cancel"><i class="material-icons">close</i></button>
+                                    <img src="assets/portfolio/Planify_webUI_big.png">
+                                </div>
+                            </a>
+                        </figure>
+                        
+                        <figure>
+                            <a href="portfolio#img5" class="small_thumb">
+                                <img src="assets/portfolio/equilibrium_appUI_light_small.png">
+                            </a>
+                            
+                            <a href="portfolio#_" class="big_thumb" id="img5">
+                                <div class="zoom_container">
+                                    <button class="cancel"><i class="material-icons">close</i></button>
+                                    <img src="assets/portfolio/equilibrium_appUI_light_big.png">
+                                </div>
+                            </a>
+                        </figure>
+                        
                     </ng-container>
                     
-                    <figure *ngIf="tabActiveType['mApps']">
-                        <!-- thumbnail image wrapped in a link -->
-                        <a href="portfolio#img1" class="small_thumb">
-                            <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
-                        </a>
-                        
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="portfolio#_" class="big_thumb" id="img1">
-                            <div class="zoom_container"><img src="https://cdn.business2community.com/wp-content/uploads/2019/10/UI-vs-UX-design.jpg"></div>
-                        </a>
-                    </figure>
+                    
+                    
                     
                     <figure *ngIf="tabActiveType['mApps']">
-                        <!-- thumbnail image wrapped in a link -->
                         <a href="portfolio#img1" class="small_thumb">
-                            <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                            <img src="assets/portfolio/AbacusDesk_Sales_appUI_small.png">
                         </a>
                         
-                        <!-- lightbox container hidden with CSS -->
                         <a href="portfolio#_" class="big_thumb" id="img1">
-                            <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                            <div class="zoom_container">
+                                <button class="cancel"><i class="material-icons">close</i></button>
+                                <img src="assets/portfolio/AbacusDesk_Sales_appUI_big.png">
+                            </div>
                         </a>
                     </figure>
                     
                     <figure *ngIf="tabActiveType['crm']">
-                        <!-- thumbnail image wrapped in a link -->
-                        <a href="portfolio#img1" class="small_thumb">
-                            <img src="assets/abacusDesk_Sales_aPP_UI.jpg">
+                        <a href="portfolio#img2" class="small_thumb">
+                            <img src="assets/portfolio/AsianHospital_crmUI_small.png">
                         </a>
                         
-                        <!-- lightbox container hidden with CSS -->
-                        <a href="portfolio#_" class="big_thumb" id="img1">
-                            <div class="zoom_container"><img src="assets/abacusDesk_Sales_aPP_UI.jpg"></div>
+                        <a href="portfolio#_" class="big_thumb" id="img2">
+                            <div class="zoom_container">
+                                <button class="cancel"><i class="material-icons">close</i></button>
+                                <img src="assets/portfolio/AsianHospital_crmUI_big.png">
+                            </div>
                         </a>
                     </figure>
+                    
+                    <figure *ngIf="tabActiveType['mApps']">
+                        <a href="portfolio#img3" class="small_thumb">
+                            <img src="assets/portfolio/equilibrium_appUI_dark_small.png">
+                        </a>
+                        
+                        <a href="portfolio#_" class="big_thumb" id="img3">
+                            <div class="zoom_container">
+                                <button class="cancel"><i class="material-icons">close</i></button>
+                                <img src="assets/portfolio/equilibrium_appUI_dark_big.png">
+                            </div>
+                        </a>
+                    </figure>
+                    
+                    <figure *ngIf="tabActiveType['wApps']">
+                        <a href="portfolio#img4" class="small_thumb">
+                            <img src="assets/portfolio/Planify_webUI_small.png">
+                        </a>
+                        
+                        <a href="portfolio#_" class="big_thumb" id="img4">
+                            <div class="zoom_container">
+                                <button class="cancel"><i class="material-icons">close</i></button>
+                                <img src="assets/portfolio/Planify_webUI_big.png">
+                            </div>
+                        </a>
+                    </figure>
+                    
+                    <figure *ngIf="tabActiveType['mApps']">
+                        <a href="portfolio#img5" class="small_thumb">
+                            <img src="assets/portfolio/equilibrium_appUI_light_small.png">
+                        </a>
+                        
+                        <a href="portfolio#_" class="big_thumb" id="img5">
+                            <div class="zoom_container">
+                                <button class="cancel"><i class="material-icons">close</i></button>
+                                <img src="assets/portfolio/equilibrium_appUI_light_big.png">
+                            </div>
+                        </a>
+                    </figure>
+                    
+                    
+                    
+                    
                 </div>
             </div>
             
